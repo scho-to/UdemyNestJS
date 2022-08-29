@@ -5,7 +5,7 @@ GET http://localhost:3000/messages
 POST http://localhost:3000/messages
 Content-Type: application/json
 
-{"content": "Cool"}
+{"content": "dfsfd"}
 
 ### Get one Message
 http://localhost:3000/messages/1
