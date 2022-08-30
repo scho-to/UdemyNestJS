@@ -1,22 +1,34 @@
-### Create a User
+### Register a User
 POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
-{"email": "test@test.test", "password": "password1234456"}
+{"email": "tobias@test.test", "password": "123456"}
+
+### Login
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{"email": "tobias@test.test", "password": "123456"}
+
+### Get current user
+GET http://localhost:3000/auth/whoami
+
+### Sign out
+POST http://localhost:3000/auth/signout
 
 ### Find User by Id
-GET http://localhost:3000/auth/6
+GET http://localhost:3000/auth/1
 
 ### Find Users by E-Mail
-GET http://localhost:3000/auth?email=test@test.test
+GET http://localhost:3000/auth?email=tobias@test.test
 
 ### Delete User by Id
-DELETE http://localhost:3000/auth/9
+DELETE http://localhost:3000/auth/1
 
 ### Update User by Id
-PATCH http://localhost:3000/auth/6
+PATCH http://localhost:3000/auth/1
 Content-Type: application/json
 
 {
-  "password": "aaa"
+  "password": "12345"
 }
