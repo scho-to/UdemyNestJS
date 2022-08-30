@@ -36,3 +36,7 @@ coverage
 
 #DBs
 *sqlite*
+
+#env-Files
+.env.dev*
+.env.test*
